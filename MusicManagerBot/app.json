@@ -19,28 +19,8 @@
             "required": true,
             "value": ""
         },
-        "ASSNAME": {
-            "description": "fill with telegram name of account",
-            "required": true,
-            "value": ""
-        },
-        "ASSUSERNAME": {
-            "description": "fill with telegram username of account without @",
-            "required": true,
-            "value": ""
-        },
         "BOT_ID": {
             "description": "fill with telegram id of bot",
-            "required": true,
-            "value": ""
-        },
-        "BOT_USERNAME": {
-            "description": "fill with telegram username of bot without @",
-            "required": true,
-            "value": ""
-        },
-        "BOT_NAME": {
-            "description": "fill with telegram name of bot",
             "required": true,
             "value": ""
         },
