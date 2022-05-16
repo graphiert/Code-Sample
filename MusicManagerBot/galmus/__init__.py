@@ -6,10 +6,10 @@ from galmus import config
 
 SUDO_USERS = config.SUDO_USERS
 OWNER_ID = config.OWNER_ID
-BOT_ID = config.BOT_ID
+BOT_ID = ""
 BOT_NAME = ""
 BOT_USERNAME = ""
-ASSID = config.ASSID
+ASSID = ""
 ASSNAME = ""
 ASSUSERNAME = ""
 

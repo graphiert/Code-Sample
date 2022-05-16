@@ -14,16 +14,6 @@
             "required": true,
             "value": ""
         },
-        "ASSID": {
-            "description": "fill with telegram id of account",
-            "required": true,
-            "value": ""
-        },
-        "BOT_ID": {
-            "description": "fill with telegram id of bot",
-            "required": true,
-            "value": ""
-        },
         "HEROKU_API_KEY": {
             "description": "Your Heroku API key, get it from 'https://dashboard.heroku.com/account'",
             "required": true,
@@ -57,7 +47,7 @@
         "DURATION_LIMIT": {
             "description": "filled, don't change this !",
             "required": true,
-            "value": ""
+            "value": "60"
         },
         "BOT_TOKEN": {
             "description": "fill with your bot token get from @BotFather on telegram",
