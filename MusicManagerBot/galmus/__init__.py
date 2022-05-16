@@ -3,7 +3,6 @@ import importlib
 from pyrogram import Client
 from galmus import config
 
-
 SUDO_USERS = config.SUDO_USERS
 OWNER_ID = config.OWNER_ID
 BOT_ID = ""
