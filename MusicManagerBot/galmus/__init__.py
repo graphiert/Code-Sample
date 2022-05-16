@@ -5,6 +5,12 @@ from galmus import config
 
 SUDO_USERS = config.SUDO_USERS
 OWNER_ID = config.OWNER_ID
+BOT_ID = config.BOT_ID
+BOT_NAME = config.BOT_NAME
+BOT_USERNAME = config.BOT_USERNAME
+ASSID = config.ASSID
+ASSNAME = config.ASSNAME
+ASSUSERNAME = config.ASSUSERNAME
 
 app = Client(
     "galihmusic",
@@ -17,23 +23,23 @@ client = Client(config.SESSION_NAME, config.API_ID, config.API_HASH)
 
 
 def all_info(app, client):
-    global config.BOT_ID, config.BOT_NAME, config.BOT_USERNAME
-    global config.ASSID, config.ASSNAME, config.ASSUSERNAME
+    global BOT_ID, BOT_NAME, BOT_USERNAME
+    global ASSID, ASSNAME, ASSUSERNAME
     getme = app.get_me()
     getme1 = client.get_me()
-    config.BOT_ID = getme.id
-    config.ASSID = getme1.id
+    BOT_ID = getme.id
+    ASSID = getme1.id
     if getme.last_name:
-        config.BOT_NAME = getme.first_name + " " + getme.last_name
+        BOT_NAME = getme.first_name + " " + getme.last_name
     else:
-        config.BOT_NAME = getme.first_name
-    config.BOT_USERNAME = getme.username
-    config.ASSNAME = (
+        BOT_NAME = getme.first_name
+    BOT_USERNAME = getme.username
+    ASSNAME = (
         f"{getme1.first_name} {getme1.last_name}"
         if getme1.last_name
         else getme1.first_name
     )
-    config.ASSUSERNAME = getme1.username
+    ASSUSERNAME = getme1.username
 
 
 app.start()
