@@ -5,6 +5,11 @@
     "repository": "https://github.com/galihpujiirianto/MusicManagerBot",
     "stack": "container",
     "env": {
+        "BOT_TOKEN": {
+            "description": "fill with your bot token get from @BotFather on telegram",
+            "required": true,
+            "value": ""
+        },
         "SESSION_NAME": {
             "description": "fill with the pyrogram session string from account",
             "required": true
@@ -21,11 +26,6 @@
         },
         "HEROKU_APP_NAME": {
             "description": "Add the Heroku app name here. It helps with restart bot.",
-            "required": true,
-            "value": ""
-        },
-        "BG_IMG": {
-            "description": "direct link for backgroud",
             "required": true,
             "value": ""
         },
@@ -48,11 +48,6 @@
             "description": "filled, don't change this !",
             "required": true,
             "value": "60"
-        },
-        "BOT_TOKEN": {
-            "description": "fill with your bot token get from @BotFather on telegram",
-            "required": true,
-            "value": ""
         },
         "MONGO_DB_URI": {
             "description": "fill with the mongodb url get from mongodb.cloud.com (don't use mine below !)",

@@ -22,5 +22,5 @@ UPDATE = getenv("UPDATE", "GalonUpdates")
 SUPPORT = getenv("SUPPORT", "GalonSupport")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "10"))
 CMD_MUSIC = list(getenv("CMD_MUSIC", "/ !").split())
-BG_IMG = getenv("BG_IMG")
+BG_IMG = "https://telegra.ph/file/50a43cdb6445df264b91e.jpg"
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
