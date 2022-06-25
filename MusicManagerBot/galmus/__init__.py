@@ -5,12 +5,12 @@ from galmus import config
 
 SUDO_USERS = config.SUDO_USERS
 OWNER_ID = config.OWNER_ID
-BOT_ID = config.BOT_ID
-BOT_NAME = config.BOT_NAME
-BOT_USERNAME = config.BOT_USERNAME
-ASSID = config.ASSID
-ASSNAME = config.ASSNAME
-ASSUSERNAME = config.ASSUSERNAME
+BOT_ID = ""
+BOT_NAME = ""
+BOT_USERNAME = ""
+ASSID = ""
+ASSNAME = ""
+ASSUSERNAME = ""
 
 app = Client(
     "galihmusic",

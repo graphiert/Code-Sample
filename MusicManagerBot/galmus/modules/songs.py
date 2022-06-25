@@ -6,8 +6,7 @@ import yt_dlp
 from pyrogram import Client, filters
 from youtube_search import YoutubeSearch
 
-from galmus import app
-from galmus.config import BOT_USERNAME
+from galmus import app, BOT_USERNAME
 from galmus.utils.filters import command
 
 

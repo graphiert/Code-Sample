@@ -5,12 +5,7 @@ load_dotenv()
 
 que = {}
 admins = {}
-BOT_ID = ""
-BOT_NAME = ""
-BOT_USERNAME = ""
-ASSID = ""
-ASSNAME = ""
-ASSUSERNAME = ""
+
 SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
 UPSTREAM_REPO = getenv("UPSTREAM_REPO")

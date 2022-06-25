@@ -8,8 +8,8 @@ from time import time
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from galmus import app
-from galmus.config import OWNER_ID, BOT_NAME
+from galmus import app, BOT_NAME
+from galmus import OWNER_ID
 from galmus.database.chats import blacklist_chat, blacklisted_chats, whitelist_chat
 from galmus.utils.decorators import sudo_users_only
 from galmus.utils.filters import command

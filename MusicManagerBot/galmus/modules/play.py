@@ -42,20 +42,22 @@ from galmus.database.queue import (
     is_music_playing,
     music_off,
 )
-from galmus import app
+from galmus import (
+    app,
+    BOT_ID,
+    ASSNAME,
+    ASSUSERNAME,
+    ASSID,
+    BOT_USERNAME,
+)
 import galmus.tgcalls
 from galmus.tgcalls import youtube
 from galmus.config import (
     DURATION_LIMIT,
     que,
     SUDO_USERS,
-    BOT_ID,
-    ASSNAME,
-    ASSUSERNAME,
-    ASSID,
     SUPPORT,
     UPDATE,
-    BOT_USERNAME,
 )
 from galmus.utils.filters import command
 from galmus.utils.decorators import errors, sudo_users_only
