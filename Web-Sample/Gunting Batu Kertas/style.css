@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1rem;
+}
+html {
+	height: 100vh;
+}
+body {
+	background-color: #dedede;
+	background-image: url('https://i.postimg.cc/C5fkQzLN/background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+button {
+	background-color: #fff;
+}
+button:hover {
+	background-color: #eaeaea;
+}
+
+/*class*/
+.background-blur {
+	background-color: rgba(255,255,255,.6);
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+}
+.hidden {
+	visibility: hidden;
+}
+.text-grey {
+	color: #888;
+}
+
+
+/*container*/
+div.container {
+	width: 580px;
+	height: 380px;
+	overflow: hidden;
+	border-radius: 20px;
+	margin: 15vh auto 18px ;
+	box-shadow: 0 0 14px rgba(0,0,0,.15);
+}
+
+/*keterangan*/
+div.hasil {
+	height: 240px;
+	width: auto;
+}
+div.hasil p{
+	text-transform: lowercase;
+	font-size: 1.5rem;
+	text-align: center;
+	line-height: 240px;
+}
+
+/*FIGHT*/
+div.fight {
+	height: 140px;
+	width: auto;
+	padding: 20px 0 0;
+	background-color: white;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+}
+div.vs p {
+	line-height: 98px;
+	color: grey;
+}
+p.ket {
+	font-size: .8em;
+	color: #666;
+}
+.memilih {
+	background-color: #eaeaea;
+	text-align: center;
+	width: 180px; 
+	height: 48px;
+	margin-top: 8px;
+}
+.memilih p{
+	line-height: 48px;
+	color: black;
+}
+
+/*PILIHAN*/
+div.pilihan-player {
+	width: 580px;
+	border-radius: 20px;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 0 14px rgba(0,0,0,.15);
+}
+.pilihan-player button {
+	width: 164px;
+	height: 48px;
+	margin: 16px 4px;
+	border: none;
+	border-radius: 16px;
+	text-align: center;
+}
+
+.pilihan-player button p {
+	line-height:18px;
+}
+
+/*main lagi*/
+.main-lagi {
+	text-align: center;
+	margin: 2px auto;
+	display: block;
+	width: 240px;
+	height: 56px;
+	border-radius: 16px;
+	border: none;
+	margin-top: -68px;
+	box-shadow: 0 0 14px rgba(0,0,0,.12);
+}
+
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 600px) {
+	div.container,
+	div.pilihan-player {
+		width: 320px;
+	}
+	.memilih {
+		width: 120px; 
+	}
+	.pilihan-player button {
+		width: 86px;
+	}
+	div.vs p {
+		font-size: .8em;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	div.container,
+	div.pilihan-player {
+		width: 280px;
+	}
+	.memilih {
+		width: 116px; 
+	}
+	.pilihan-player button {
+		width: 82px;
+		margin: 16px 2px;
+	}
+}
+
+
+
