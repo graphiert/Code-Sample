@@ -28,3 +28,4 @@
       - Daftar routing: `urlpatterns = []`
   - Buka file `views.py` di project `mywebsite`
     - Atur views
+      - Dengan template HTML di folder `templates`
