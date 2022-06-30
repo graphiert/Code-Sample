@@ -5,9 +5,11 @@
 2. Buat app
   - `cd mywebsite`
   - `python manage.py startapp <nama-app>`
+  - Dari root project, buka settings.py di `mywebsite`
+  - Cari `INSTALLED_APPS`, lalu isikan dengan `<nama-app>`
 3. Atur templating
   - Dari root project, buka settings.py di `mywebsite`
-  - Cari TEMPLATES.DIRS, lalu isikan dengan `'templates'`
+  - Cari `TEMPLATES.DIRS`, lalu isikan dengan `'templates'`
   - Buat folder `templates` di root project
 4. Atur index project dan setting routing
   - Buka `urls.py` di project `mywebsite`
