@@ -1,4 +1,5 @@
 import shutil, subprocess
+print("Initializing...")
 
 """
 Make sure you have Git, Python (of course), and `python-pip` installed
@@ -22,4 +23,4 @@ ready_to_exc += f"pip3 install --no-cache-dir -U -r {PACKAGE_FOLDER}/requirement
 print("Fetching the Latest updates and installing the requirements...")
 subprocess.call(ready_to_exc, shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
 print("Fetched the updates and starting the bot...")
-subprocess.call(f"python3 -m {PACKAGE_FOLDER}", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
+print(subprocess.Popen(f"python3 -m {PACKAGE_FOLDER}", shell=True, stdout=subprocess.PIPE).communicate())
