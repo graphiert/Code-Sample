@@ -1,5 +1,5 @@
 class Anything:
-  
+
   __jumlah = 0
   def __init__(self, a, b, c):
     # Public variable => bisa diakses dari luar
@@ -27,11 +27,11 @@ class Anything:
   @classmethod
   def lihat_jumlah3(cls):
     return cls.__jumlah
-  
-  # Properti yang read-only, jika ada perubahan maka dia ikut berubah
+
+  # Untuk melakukan sesuatu, buat method pass lalu jadikan property
   @property
-  def lihat_nilai(self):
-    return [self.a, self._b, self.__c]
+  def nilai(self):
+    pass
   
   # Properti untuk mengambil nilai seperti variabel
   @nilai.getter
@@ -52,4 +52,3 @@ class Anything:
     self.a = None
     self._b = None
     self.__c = None
-    
