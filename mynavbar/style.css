@@ -1,0 +1,114 @@
+ * {
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+   list-style: none;
+ }
+ 
+ body {
+   font-family: Arial;
+ }
+ 
+ nav {
+   background-color: #826562;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 11px 0;
+   position: relative;
+}
+ 
+ nav h1 {
+   font-size: 16px;
+   color: white;
+ }
+ 
+ nav ul {
+   display: flex;
+   width: 40%;
+   justify-content: space-around;
+ }
+ 
+ nav ul li a {
+   color: #1a1616;
+ }
+ 
+ nav ul li a:hover {
+   color: #4d403f;
+ }
+ 
+ @media screen and (max-width: 768px) {
+   nav ul {
+     width: 50%;
+   }
+ }
+ 
+ @media screen and (max-width: 576px) {
+   nav ul {
+     display: none;
+     position: absolute;
+     flex-direction: column;
+     background-color: white;
+     text-align: center;
+     border-radius: 15px;
+     overflow: hidden;
+     box-shadow: 1px 1px #3b372e;
+     top: 39px;
+     right: 43px;
+     transition: all .5s;
+     padding: 2px;
+   }
+
+   nav ul li {
+     margin: 3px 0;
+   }
+   
+   .menu-toggle {
+     display: flex !important;
+   }
+ }
+ 
+ 
+ /* Hamburger Menu */
+ 
+ .menu-toggle {
+      display: none;
+      flex-direction: column;
+      height: 20px;
+      justify-content: space-between;
+      position: relative;
+    }
+    
+    .menu-toggle input {
+      position: absolute;
+      width: 40px;
+      height: 28px;
+      top: -5px;
+      left: -6px;
+      opacity: 0;
+      cursor: pointer;
+      z-index: 1;
+    }
+    
+    .menu-toggle span {
+      display: block;
+      width: 28px;
+      height: 3px;
+      background-color: white;
+      transition: all .5s
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(2) {
+      transform-origin: 0 0;
+      transform: rotate(45deg) translate(-1px, -1px);
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(3) {
+      transform: scale(0);
+      opacity: 0;
+    }
+    
+    .menu-toggle input:checked ~ span:nth-child(4) {
+      transform-origin: 0 100%;
+      transform: rotate(-45deg) translate(-1px, 0);
+    }

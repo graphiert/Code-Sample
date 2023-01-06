@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Test Navbar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <nav>
+    <h1>Galih Puji Irianto</h1>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    
+    <div class="menu-toggle">
+      <input type="checkbox">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+  
+  <script>
+    const toggleNav = document.querySelector(".menu-toggle input")
+    const navUl = document.querySelector("nav ul")
+    
+    window.onclick = e => {
+      if(e.target != toggleNav && e.target != navUl) {
+          toggleNav.checked = false;
+          navUl.style.display = 'none';
+      }
+    }
+    
+    toggleNav.addEventListener("click", () => {
+      toggleNav.checked ? navUl.style.display = "flex" : navUl.style.display = "none"
+    });
+  </script>
+</body>
+</html>
