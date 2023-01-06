@@ -10,7 +10,7 @@
  }
  
  nav {
-   background-color: #826562;
+   background-color: #ffe499;
    display: flex;
    justify-content: space-around;
    align-items: center;
@@ -20,7 +20,6 @@
  
  nav h1 {
    font-size: 16px;
-   color: white;
  }
  
  nav ul {
@@ -94,7 +93,7 @@
       display: block;
       width: 28px;
       height: 3px;
-      background-color: white;
+      background-color: black;
       transition: all .5s
     }
     
