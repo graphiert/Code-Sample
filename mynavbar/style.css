@@ -14,8 +14,9 @@
    display: flex;
    justify-content: space-around;
    align-items: center;
+   width: 100%;
    padding: 11px 0;
-   position: relative;
+   position: fixed;
 }
  
  nav h1 {
