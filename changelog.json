@@ -2,35 +2,32 @@
   {
     "version": 4,
     "features": [
-      "Dah bisa naik motor wlee",
-      "I WANT TO BE BACK WITH HER :(",
-      "Cinta sekolah",
-      "Benci Mixue dan Latto-latto"
+      "Website dengan menggunakan Svelte",
+      "Mengumpulkan karya website di satu tempat -- web ini",
+      "Blog pribadi (kalo niat ngisi)"
     ]
   },
   {
     "version": 3,
     "features": [
-      "Agak tolol",
-      "Jadi benci pacaran",
-      "Agak nolep, suka dirumah terus",
-      "Penakut semenjak Persami",
-      "Terjebak dalam sirkel wibu"
+      "Ganti CSS dengan TailwindCSS",
+      "Tampilan lebih minimalis",
+      "Website bisa dikunjungi via Vercel"
     ]
   },
   {
     "version": 2,
     "features": [
-      "Jadi tau yang namanya couple",
-      "Belum jadi wibu"
+      "Tampilan baru untuk form contact",
+      "Kustomisasi kecil-kecilan"
     ]
   },
   {
     "version": 1,
     "features": [
-      "Pendek, roti isi, agak pinter",
-      "Suka sosialisasi sama teman",
-      "Sangat alay sekali!"
+      "Website dengan HTML statis",
+      "Menggunakan CSS Framework Bootstrap",
+      "Hasil latihan NGOBAR (dari Sandhika Galih)"
     ]
   }
 ]
